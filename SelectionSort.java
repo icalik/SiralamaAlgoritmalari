@@ -2,12 +2,12 @@
 public class SelectionSort {
 
 	public static void selectionSort(int[] A) {
-		int n = A.length + 1;
+		int n = A.length;
 		int tmp;
 		int min;
-		for (int i = 0; i < n - 1; i++) {
+		for (int i = 0; i < n; i++) {
 			min = i;
-			for (int j = i; j < n - 1; j++) {
+			for (int j = i; j < n; j++) {
 				if (A[j] < A[min]) {
 					min = j;
 				}
